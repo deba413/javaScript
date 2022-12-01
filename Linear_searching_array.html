@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear searching in array with javaScript</title>
+</head>
+<body>
+    <h1>Linear searching in array with javaScript</h1>
+    <script>
+        function Searching()
+        {
+            let data=[45,65,69,65,8,23,45,7,8,1,2,63,4,8,9,6]
+            let item=document.getElementById("item").value;
+            let index=undefined;
+            for(let i=0;i<=data.length-1;i++)
+            {
+                if(data[i]==parseInt(item))
+                {
+                    index=i;
+                    break;
+                }
+            
+            }
+            document.getElementById("item").value="";
+            console.warn(index);
+        } 
+    </script>
+    <input type="text" id="item" placeholder="Enter an element">
+    <button onclick="Searching()">Search</button>
+</body>
+</html>
