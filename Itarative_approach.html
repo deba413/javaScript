@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iterative Approach with javaScript</title>
+</head>
+<body>
+    <h1>Iterative Approach with javaScript</h1>
+    <script>
+       
+       let data=[2,4,6,8,9,10,13,24,35,46];
+        let start=0;
+        let end=data.length-1;
+        let find=8;
+        let pos=undefined;
+        while(start<=end)
+        {
+            let mid=Math.floor((start+end)/2);
+            if(data[mid]===find)
+            {
+                pos=mid;
+                break;
+            }
+            else if(data[mid]<find)
+            {
+                start=mid+1;
+            }
+            else
+            {
+                end=mid-1;
+            }
+        }
+        console.warn(pos);
+    </script>
+</body>
+</html>
