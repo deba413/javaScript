@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enqueue and dequeue with javaScript</title>
+</head>
+<body>
+    <script>
+        let queue=[];
+        let currentEl=queue.length;
+        let maxEl=3;
+        function enqueue(newEl){
+           if(currentEl>=maxEl){
+            alert("Queue is full")
+           }else{
+            queue[currentEl]=newEl;
+            currentEl++;
+           }
+        }
+        function dequeue(){
+            if(currentEl>0){
+                for(i=0;i<queue.length;i++){
+                    queue[i]=queue[i+1];
+                }
+                currentEl--;
+                queue.length=currentEl;
+            }else{
+                alert("queue is empty")
+            }
+
+        }
+        function display(){
+            console.warn(queue)
+
+        }
+        // enqueue();
+        // dequeue();
+        // display();
+    </script>
+</body>
+</html>
