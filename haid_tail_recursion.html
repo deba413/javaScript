@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Head and tail recursion</title>
+    <script>
+        function data(x){
+            console.warn(x); //Head recursion
+            if(x>0){
+               data(x-1);
+            }
+            console.warn(x); //Tail Recursion
+        }
+        let y=5;
+        data(y);
+    </script>
+</head>
+<body>
+</body>
+</html>

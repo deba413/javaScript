@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array indirect recursion</title>
+</head>
+<body>
+    <script>
+        let Money=100;
+        let TotalApple=0;
+        function buyApple(x)
+        {
+            if(x>0){
+                console.warn("i have", x,"RS",TotalApple)
+            buyMore(x-10);
+             }else{
+                console.warn(" i don't have any money",TotalApple)
+             }
+                
+        }
+        function buyMore(x)
+        {
+            TotalApple++;
+            buyApple(x-10);
+        }
+        console.warn(buyApple(Money));
+    </script>
+</body>
+</html>

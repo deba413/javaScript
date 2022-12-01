@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array revers with recursion function </Ri:a></title>
+</head>
+<body>
+    <script>
+        let data=[12,45,87,32,65,58,21,46]
+        let temp;
+        function arrayReverse(data,start,end){
+            console.warn(data)
+            if(start<=end){
+                temp=data[start];
+                data[start]=data[end];
+                data[end]=data[start];
+                arrayReverse(data,start+1,end-1)
+            }
+        }
+        arrayReverse(data,0,data.length-1)
+    </script>
+    
+</body>
+</html>

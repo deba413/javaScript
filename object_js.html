@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object in js</title>
+</head>
+<body>
+    <script>
+        //object in javascript:-
+        // var a={
+        //     fname:'debasish',
+        //     lname:'mandal',
+        //     age:20,
+        //     email:'debasishmandal8244@gmail.com',
+        //     adress:{
+        //         village:'kurchi',
+        //         distric:'howrah',
+        //         pin:711226,
+        //     },
+        //     fulname:function(){
+        //         return this.fname+" "+this.lname;
+        //     },
+
+        // };
+        // // document.write(a.adress.village);
+        // document.write(a.fulname());
+         
+
+        //method 2:-
+        // var a=new Object();
+        // a.fname='ram';
+        // a.lname='mandal';
+        // a.age=20;
+
+        // document.write(a.fname);
+
+
+        //array of  object:-
+        // var a=[
+        //     {name:'ram',age:20},
+        //     {name:'deba',age:20},
+        //     {name:'Trisha',age:17},
+        // ];
+        // for(var b=0;b<=a.length;b++){
+        //      document.write(a[b].name+" "+a[b].age +"<br>");
+        // }
+
+        //const variable with array & object:-
+
+
+
+        //For/in loop:-
+        // var a={
+        //     fname:'debasish',
+        //     lname:'mandal',
+        //     age:20,
+        //     email:'debasishmandal8244@gmail.com',
+        //     };
+        //     for(var key in a){
+        //         document.write(key +":"+a[key] +"<br>");
+        //     }
+
+        // //array methods map:-
+        // var a=[41,52,8,36,45];
+        // var b=a.map(test);
+        // document.write(b);
+        // function test(x){
+        //     return x*=110;
+        // };
+
+
+        var a=[
+            {fname: 'deba',lname:'mandal'},
+            {fname: 'sayan',lname:'mondal'},
+            {fname:'snatu',lanme:'paul'},
+            {fname:'tanmoy',lname:'mondal'},
+        ];
+        var b=a.map(test);
+        document.write(b);
+        function test(x){
+            return x.fname+" "+x.lname;
+            
+        }
+    </script>
+</body>
+</html>

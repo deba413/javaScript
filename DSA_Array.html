@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Accessing</title>
+</head>
+<body>
+    
+    <script>
+        let a=[2,5,52,65,23,21,14,78,89,65,41,45,21,58,78,3,26,54,8,58,2,46,431,900]
+        function getElement()
+        {
+            let el= document.getElementById(`element`).value
+            if(el>a.length && typeof parseInt (el) ==="number")
+            {
+                alert(`array ${el} is ${a.indexOf[el]}`)
+            {
+               if(el>0 && typeof parseInt(el)==="number")
+               {
+                alert(a.indexOf(el))
+                }
+            }
+
+            }else{
+                alert("not define")
+            }
+        }
+      
+        // for(let i=0; i<=a.length;i++)
+        // {
+        // document.write(`array ${i} is ${a[i]} <br>`)
+
+        // }
+
+    </script>
+<input type="text" id="element">
+<button onclick="getElement()"> Get element</button>
+</body>
+</html> 

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert an element in array</title>
+</head>
+<body>
+    <input type="text" id="newEl" placeholder="Enter new element">
+    <input type="text" id="position" placeholder="Enter the positon">
+    <button onClick="insert()">Insert Element</button>
+    <script>
+        function insert()
+        {
+            let array=[41,21,54,65,87,45,49];   
+            let newEl=document.getElementById("newEl").value;
+            newEl=parseInt(newEl);
+            let position=document.getElementById("position").value;
+            for(let i=array.length;i>=0;i--)
+            {
+                if(i>=position)
+                {
+                        array[i+1]=array[i];
+                    
+                    if(i==position)
+                    {
+                        array[i]=newEl;
+                    }
+                }
+
+            } 
+        console.warn(array)
+        }
+     </script>
+</body>
+</html>
